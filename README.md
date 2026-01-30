@@ -4,6 +4,8 @@
 
 "model_train_AMFMS" - training for AMFMS and AMFMS_SEG
 
+"model_train_TU-Net" - training for TU-Net and TU-Net-SEG
+
 "model_train_ABA" - training for ABA-FWI and ABA-FWI+
 
 "model_train_DDNet" - training for DD-Net and DD-Net70
