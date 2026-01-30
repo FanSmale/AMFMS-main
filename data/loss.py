@@ -269,3 +269,14 @@ def criterion_g(pred, gt, net_d=None):
         loss_adv = -torch.mean(net_d(pred))
         loss += loss_adv
     return loss, loss_g1v, loss_g2v
+
+
+def criterion_tu(outputs, vmodels, edges):
+    loss_glv = l1loss(outputs, vmodels)
+    loss_g2v = l2loss(outputs, vmodels)
+    loss_pixel = 0.5 * loss_glv + 0.5 * loss_g2v
+    edge_weight = calculate_edge(edges)
+    loss_edge = torch.sum(edge_weight * torch.abs(outputs-vmodels)) / (vmodels.size(0) * torch.sum(edge_weight))
+    result_loss = 0.7 * loss_pixel + 0.3 * loss_edge
+    return result_loss
+
