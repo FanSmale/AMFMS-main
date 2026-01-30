@@ -10,7 +10,7 @@ Marmousi = False
 DataSet = "CurveVelA/"  # CurveVelA/B  FlatFaultA  FlatVelA   CurveFaultA/B  SEGSaltData  SEGSimulation
 
 # choose the network
-NetworkName = 'AMFMS'  # DD_Net DD_Net70 FCNVMB InversionNet AMFMS AMFMS_SEG ABA-FWI ABA-FWI+ VelocityGAN
+NetworkName = 'AMFMS'  # DD_Net DD_Net70 FCNVMB InversionNet AMFMS AMFMS_SEG ABA-FWI ABA-FWI+ VelocityGAN TU-Net TU-Net-SEG
 
 # whether to use and train the model
 ReUse = False  # If False always re-train a network
@@ -37,6 +37,8 @@ if NetworkName == "InversionNet" or NetworkName == "ABA-FWI":
     LearnRate = 1e-4
 elif NetworkName in ["AMFMS", "AMFMS_SEG"]:
     LearnRate = 5e-4
+elif NetworkName == "TU-Net" or NetworkName == "TU-Net-SEG":
+    LearnRate = 3e-4
 else:
     LearnRate = 1e-3
 
@@ -86,3 +88,4 @@ elif DataSet == "marmousi_70_70/":
     BatchSize = 20  # Number of batch size
     SaveEpoch = 10
     loss_weight = [1, 0.01]
+
