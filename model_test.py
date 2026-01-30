@@ -8,6 +8,8 @@ from model.DDNet70 import *
 from model.InversionNet import *
 from model.ABA_FWI import *
 from model.ABA_FWI_SEG import *
+from model.TU_Net import *
+from model.TU_Net_SEG import *
 import os
 
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
@@ -43,6 +45,12 @@ elif NetworkName == "ABA-FWI":
 
 elif NetworkName == "ABA-FWI+":
     net = ABA_FWI_SEG(n_classes=OutChannel, in_channels=InChannel, is_deconv=True, is_batchnorm=True)
+
+elif NetworkName == "TU_Net":
+    net = TU_Net(n_classes=OutChannel, in_channels=InChannel, is_deconv=True, is_batchnorm=True)
+
+elif NetworkName == "TU_Net_SEG":
+    net = TU_Net_SEG(n_classes=OutChannel, in_channels=InChannel, is_deconv=True, is_batchnorm=True)
 
 net.load_state_dict(torch.load(model_file, map_location=torch.device('cpu')))
 
@@ -161,4 +169,5 @@ for i, (seismic_datas, vmodels, edges, vmodel_max_min) in enumerate(test_loader)
 
 SaveTestResultsEdge(Total_PSNR, Total_SSIM, Total_MSE, Total_MAE, Total_UQI, Total_LPIPS, Local_MSE, Local_MAE,
                     Prediction, GT, test_result_dir)
+
 
