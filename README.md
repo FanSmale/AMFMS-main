@@ -1,4 +1,4 @@
-# Enhancing Seismic Inversion Fidelity via Adaptive Multi-Frequency and Multi-Scale Fusion
+<img width="3569" height="2401" alt="Noise_metrics" src="https://github.com/user-attachments/assets/27d6e2f6-3366-4e10-8978-2822ce86db3f" /># Enhancing Seismic Inversion Fidelity via Adaptive Multi-Frequency and Multi-Scale Fusion
 
 ## Abstract
 
@@ -13,6 +13,9 @@ To enhance training stability, we adopt a dynamic learning rate schedule that in
 The warm-up phase ensures stable initialization, while the cosine annealing mechanism enhances convergence and model robustness.
 Experiments are performed on three benchmark datasets from SEG salt, OpenFWI and Marmousi Ⅱ slice.
 The results demonstrate that AMFMS outperforms six state-of-the-art methods across six evaluation metrics, achieving superior accuracy and structural fidelity, especially in complex and deep regions.
+
+
+[Architecture_of_Net_new.pdf](https://github.com/user-attachments/files/25066549/Architecture_of_Net_new.pdf)
 
 
 ## Requirements
