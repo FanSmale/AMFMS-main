@@ -1,4 +1,4 @@
-<img width="3569" height="2401" alt="Noise_metrics" src="https://github.com/user-attachments/assets/27d6e2f6-3366-4e10-8978-2822ce86db3f" /># Enhancing Seismic Inversion Fidelity via Adaptive Multi-Frequency and Multi-Scale Fusion
+# Enhancing Seismic Inversion Fidelity via Adaptive Multi-Frequency and Multi-Scale Fusion
 
 ## Abstract
 
@@ -15,7 +15,7 @@ Experiments are performed on three benchmark datasets from SEG salt, OpenFWI and
 The results demonstrate that AMFMS outperforms six state-of-the-art methods across six evaluation metrics, achieving superior accuracy and structural fidelity, especially in complex and deep regions.
 
 
-[Architecture_of_Net_new.pdf](https://github.com/user-attachments/files/25066549/Architecture_of_Net_new.pdf)
+<img width="3969" height="2495" alt="AMFMS_new" src="https://github.com/user-attachments/assets/63de442e-d840-4052-938b-bb56c3c0925e" />
 
 
 ## Requirements
