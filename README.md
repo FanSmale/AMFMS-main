@@ -1,5 +1,8 @@
 # Enhancing Seismic Inversion Fidelity via Adaptive Multi-Frequency and Multi-Scale Fusion
 
+
+
+## How to use
 "model_test" - testing-related methods
 
 "model_train_AMFMS" - training for AMFMS and AMFMS_SEG
