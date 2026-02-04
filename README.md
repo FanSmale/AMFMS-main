@@ -11,7 +11,7 @@ Regarding complex geological structures, we design a new joint loss called MMT t
 It enables a smooth transition from coarse-to-fine learning, balancing global structure consistency with local geological realism.
 To enhance training stability, we adopt a dynamic learning rate schedule that integrates warm-up and cosine annealing strategies.
 The warm-up phase ensures stable initialization, while the cosine annealing mechanism enhances convergence and model robustness.
-Experiments are performed on three benchmark datasets from SEG salt, OpenFWI and Marmousi \uppercase\expandafter{\romannumeral2} slice.
+Experiments are performed on three benchmark datasets from SEG salt, OpenFWI and Marmousi Ⅱ slice.
 The results demonstrate that AMFMS outperforms six state-of-the-art methods across six evaluation metrics, achieving superior accuracy and structural fidelity, especially in complex and deep regions.
 
 
