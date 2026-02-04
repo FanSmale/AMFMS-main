@@ -25,23 +25,28 @@ The results demonstrate that AMFMS outperforms six state-of-the-art methods acro
 
 ## How to use
 
-### root directory
 
-#### model_test.py
+### model_test.py
  - testing related methods
-#### model_train_AMFMS.py
+### model_train_AMFMS.py
  - training for AMFMS and AMFMS_SEG
-#### model_train_TU-Net.py
+### model_train_TU-Net.py
  - training for TU-Net and TU-Net-SEG
-#### model_train_ABA.py
+### model_train_ABA.py
  - training for ABA-FWI and ABA-FWI+
-#### model_train_DDNet.py
+### model_train_DDNet.py
  - training for DD-Net and DD-Net70
-#### model_train_InversionNet.py
+### model_train_InversionNet.py
  - training for InversionNet
-#### model_train_FCNVMB.py
+### model_train_FCNVMB.py
  - training for FCNVMB
-#### param_config.py
+### param_config.py
  - experimental parameter settings
-#### path_config.py
- - experimental path settings
+### path_config.py
+ - experimental path settings, please modify the variable "main_dir" to your storage location
+### data directory
+- store some commonly used function methods
+### model directory
+- different network architectures
+### train_result directory
+- final results of AMFMS runs
