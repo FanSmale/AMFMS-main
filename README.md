@@ -1,6 +1,13 @@
 # Enhancing Seismic Inversion Fidelity via Adaptive Multi-Frequency and Multi-Scale Fusion
 
 
+## Requirements
+- Python 3.8
+- torch 1.8.1+cu111
+- torchvision 0.9.1+cu111
+
+
+
 
 ## How to use
 "model_test" - testing-related methods
