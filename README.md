@@ -24,12 +24,24 @@ The results demonstrate that AMFMS outperforms six state-of-the-art methods acro
 - torchvision 0.9.1+cu111
 
 ## How to use
-- "model_test" - testing related methods
-- "model_train_AMFMS" - training for AMFMS and AMFMS_SEG
-- "model_train_TU-Net" - training for TU-Net and TU-Net-SEG
-- "model_train_ABA" - training for ABA-FWI and ABA-FWI+
-- "model_train_DDNet" - training for DD-Net and DD-Net70
-- "model_train_InversionNet" - training for InversionNet
-- "model_train_FCNVMB" - training for FCNVMB
-- "param_config" - experimental parameter settings
-- "path_config" - experimental path settings
+
+### root directory
+
+#### model_test.py
+ - testing related methods
+#### model_train_AMFMS.py
+ - training for AMFMS and AMFMS_SEG
+#### model_train_TU-Net.py
+ - training for TU-Net and TU-Net-SEG
+#### model_train_ABA.py
+ - training for ABA-FWI and ABA-FWI+
+#### model_train_DDNet.py
+ - training for DD-Net and DD-Net70
+#### model_train_InversionNet.py
+ - training for InversionNet
+#### model_train_FCNVMB.py
+ - training for FCNVMB
+#### param_config.py
+ - experimental parameter settings
+#### path_config.py
+ - experimental path settings
